@@ -36,7 +36,6 @@ import { SidebarProvider, SidebarTrigger } from '@/components/ui/sidebar'
   <SidebarProvider>
     <AppSidebar />
     <main>
-      <SidebarTrigger />
       <RouterView />
     </main>
   </SidebarProvider>

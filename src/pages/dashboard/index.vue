@@ -21,7 +21,6 @@ import {
 </script>
 <template>
   <SidebarProvider>
-    <AppSidebar />
     <SidebarInset>
       <header class="flex h-16 shrink-0 items-center gap-2 border-b">
         <div class="flex items-center gap-2 px-3">
