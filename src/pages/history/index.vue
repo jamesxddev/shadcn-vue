@@ -4,7 +4,6 @@ export const description = 'A sidebar with submenus.'
 </script>
 
 <script setup lang="ts">
-import AppSidebar from '@/components/AppSidebar.vue'
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -16,7 +15,6 @@ import {
 import { Separator } from '@/components/ui/separator'
 import {
   SidebarInset,
-  SidebarProvider,
   SidebarTrigger,
 } from '@/components/ui/sidebar'
 </script>
@@ -43,12 +41,7 @@ import {
       </div>
     </header>
     <div class="flex flex-1 flex-col gap-4 p-4">
-      <div class="grid auto-rows-min gap-4 md:grid-cols-3">
-        <div class="aspect-video rounded-xl bg-muted/50" />
-        <div class="aspect-video rounded-xl bg-muted/50" />
-        <div class="aspect-video rounded-xl bg-muted/50" />
-      </div>
-      <div class="min-h-[100vh] flex-1 rounded-xl bg-muted/50 md:min-h-min" />
+      This is History Page
     </div>
   </SidebarInset>
 </template>

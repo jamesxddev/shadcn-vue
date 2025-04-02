@@ -6,6 +6,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu'
+
 import {
   SidebarGroup,
   SidebarGroupLabel,
@@ -22,6 +23,7 @@ import {
   MoreHorizontal,
   Trash2,
 } from 'lucide-vue-next'
+
 defineProps<{
   projects: {
     name: string
@@ -29,8 +31,10 @@ defineProps<{
     icon: LucideIcon
   }[]
 }>()
+
 const { isMobile } = useSidebar()
 </script>
+
 <template>
   <SidebarGroup class="group-data-[collapsible=icon]:hidden">
     <SidebarGroupLabel>Projects</SidebarGroupLabel>

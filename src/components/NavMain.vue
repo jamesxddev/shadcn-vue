@@ -15,6 +15,7 @@ import {
   SidebarMenuSubItem,
 } from '@/components/ui/sidebar'
 import { ChevronRight, type LucideIcon } from 'lucide-vue-next'
+
 defineProps<{
   items: {
     title: string
@@ -28,6 +29,7 @@ defineProps<{
   }[]
 }>()
 </script>
+
 <template>
   <SidebarGroup>
     <SidebarGroupLabel>Platform</SidebarGroupLabel>

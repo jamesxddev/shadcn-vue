@@ -4,6 +4,7 @@ import {
   AvatarFallback,
   AvatarImage,
 } from '@/components/ui/avatar'
+
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -27,6 +28,7 @@ import {
   LogOut,
   Sparkles,
 } from 'lucide-vue-next'
+
 const props = defineProps<{
   user: {
     name: string
@@ -34,8 +36,10 @@ const props = defineProps<{
     avatar: string
   }
 }>()
+
 const { isMobile } = useSidebar()
 </script>
+
 <template>
   <SidebarMenu>
     <SidebarMenuItem>
@@ -52,7 +56,7 @@ const { isMobile } = useSidebar()
               </AvatarFallback>
             </Avatar>
             <div class="grid flex-1 text-left text-sm leading-tight">
-              <span class="truncate font-semibold">{{ user.name }}</span>
+              <span class="truncate font-medium">{{ user.name }}</span>
               <span class="truncate text-xs">{{ user.email }}</span>
             </div>
             <ChevronsUpDown class="ml-auto size-4" />

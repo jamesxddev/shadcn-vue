@@ -1,17 +1,16 @@
 <script setup lang="ts">
 import type { SidebarProps } from '@/components/ui/sidebar'
-import { Calendar, Home, Inbox, Search, Settings } from "lucide-vue-next"
 
 import NavMain from '@/components/NavMain.vue'
 import NavProjects from '@/components/NavProjects.vue'
 import NavUser from '@/components/NavUser.vue'
 import TeamSwitcher from '@/components/TeamSwitcher.vue'
-
 import {
   Sidebar,
   SidebarContent,
   SidebarFooter,
   SidebarHeader,
+  SidebarRail,
 } from '@/components/ui/sidebar'
 
 import {
@@ -64,7 +63,7 @@ const data = {
       items: [
         {
           title: 'History',
-          url: '/dashboard',
+          url: '/history',
         },
         {
           title: 'Starred',
@@ -160,7 +159,6 @@ const data = {
     },
   ],
 }
-
 </script>
 
 <template>
@@ -175,5 +173,6 @@ const data = {
     <SidebarFooter>
       <NavUser :user="data.user" />
     </SidebarFooter>
+    <SidebarRail />
   </Sidebar>
 </template>
